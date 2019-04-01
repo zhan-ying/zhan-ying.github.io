@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-27T09:07:23.839Z</updated>
+  <updated>2019-04-01T08:13:07.666Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>你好世界</title>
+    <title>Makrdown的基础语法格式</title>
+    <link href="http://yoursite.com/2019/04/01/markdown/"/>
+    <id>http://yoursite.com/2019/04/01/markdown/</id>
+    <published>2019-04-01T07:33:25.000Z</published>
+    <updated>2019-04-01T08:13:07.666Z</updated>
+    
+    <content type="html"><![CDATA[<hr><h6 id="缘起：以前是自己写代码做博客系统，写博客都为了记录自己学到的东西，想发布出来还要购买服务器，近期想写一些博文免费发布出来，于是选择了用GitHub-page写博客，由于其特殊性，必须学会使用Markdown，于是就有了这篇博客"><a href="#缘起：以前是自己写代码做博客系统，写博客都为了记录自己学到的东西，想发布出来还要购买服务器，近期想写一些博文免费发布出来，于是选择了用GitHub-page写博客，由于其特殊性，必须学会使用Markdown，于是就有了这篇博客" class="headerlink" title="缘起：以前是自己写代码做博客系统，写博客都为了记录自己学到的东西，想发布出来还要购买服务器，近期想写一些博文免费发布出来，于是选择了用GitHub page写博客，由于其特殊性，必须学会使用Markdown，于是就有了这篇博客"></a>缘起：以前是自己写代码做博客系统，写博客都为了记录自己学到的东西，想发布出来还要购买服务器，近期想写一些博文免费发布出来，于是选择了用GitHub page写博客，由于其特殊性，必须学会使用Markdown，于是就有了这篇博客</h6><p><strong>1.标题的使用</strong></p><blockquote><p>#　想要的标题&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;多少个#号就代表有多少级标题，共6级</p><h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="# 这是一级标题"></a># 这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="## 这是二级标题"></a>## 这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="### 这是三级标题"></a>### 这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="#### 这是四级标题"></a>#### 这是四级标题</h4><p>注意#号后有一个空格</p></blockquote><hr><p><strong>2.间隔线</strong></p><blockquote><p>— &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三条 - 就可以划出一条间隔线</p></blockquote><hr><p><strong>3.区块引用</strong></p><blockquote><p>在引用的文字前加&gt;即可,可嵌套即不断加&gt;号<br>> 文字<br>注&gt;号与文字之间有一空格</p></blockquote><p>示例：</p><pre><code>&gt; 一级&gt;&gt; 二级&gt;&gt;&gt; 三级</code></pre><p>效果：</p><blockquote><p>一级</p><blockquote><p>二级</p><blockquote><p>三级 </p></blockquote></blockquote></blockquote><hr><p><strong>4.字体格式</strong></p><blockquote><p>加粗 文字两边加两个*号<br>倾斜 文字两边加一个*号<br>加粗加倾斜 文字两边加三个*号<br>删除线 文字两边加两个~~线<br>高亮 文字两边加两个\==号</p></blockquote><p>示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**加粗**</span><br><span class="line">*倾斜*</span><br><span class="line">***加粗加倾斜***</span><br><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure></p><p>效果：</p><blockquote><p><strong>加粗</strong><br><em>倾斜</em><br><strong><em>加粗加倾斜</em></strong><br><del>删除线</del></p></blockquote><hr><p><strong>5.超链接</strong></p><blockquote><p>文本中我们很大几率使用超链接<br>超链接语法格式如下：[超链接名](超链接地址) </p></blockquote><p>示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[百度](http://baidu.com)</span><br><span class="line">[GitHub](https://github.com/)</span><br></pre></td></tr></table></figure></p><p>效果：</p><blockquote><p><a href="http://baidu.com" target="_blank" rel="noopener">百度</a><br><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></p></blockquote><hr><p><strong>6.图片</strong></p><blockquote><p>![alt](图片地址链接路径 ‘’title’’)<br>alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>title是图片的标题，当鼠标移到图片上时显示的内容。title可省略</p></blockquote><p>示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![Markdown](https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1554110345080&amp;di=a0186dd4f1df196f24be348ef38b6853&amp;imgtype=0&amp;src=http%3A%2F%2F2.im.guokr.com%2FYtavWcYpNiA3PDc9nI3VlKABHBwMwev-sVT_rHUQJAjEAQAA_wAAAEpQ.jpg%3FimageView2%2F1%2Fw%2F400%2Fh%2F240 &quot;Markdown&quot;)</span><br></pre></td></tr></table></figure></p><p>效果：</p><p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1554110345080&amp;di=a0186dd4f1df196f24be348ef38b6853&amp;imgtype=0&amp;src=http%3A%2F%2F2.im.guokr.com%2FYtavWcYpNiA3PDc9nI3VlKABHBwMwev-sVT_rHUQJAjEAQAA_wAAAEpQ.jpg%3FimageView2%2F1%2Fw%2F400%2Fh%2F240" alt="Markdown" title="Markdown"></p><hr><p><strong>7.列表</strong></p><blockquote><p>无序列表用一个 -<br>有序列表用数字加.，形如 1. 2. 3.</p></blockquote><p>示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- 无序列表1</span><br><span class="line">- 无序列表2</span><br><span class="line">- 无序列表3</span><br><span class="line">1. 有序列表1</span><br><span class="line">2. 有序列表2</span><br><span class="line">3. 有序列表3</span><br><span class="line">注列表可以嵌套使用</span><br></pre></td></tr></table></figure></p><p>效果：</p><blockquote><ul><li>无序列表1</li><li>无序列表2</li><li>无序列表3</li></ul><ol><li>有序列表1</li><li>有序列表2</li><li>有序列表3</li></ol></blockquote><hr><p><strong>8.表格</strong></p><blockquote></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">--|--|--</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line">&gt;内容默认居左</span><br><span class="line">&gt;第二行--两边加：表示文字居中</span><br><span class="line">&gt;第二行--右边加：表示文字居右</span><br></pre></td></tr></table></figure><p>示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">四大法王|擅长|排行</span><br><span class="line">:--|:--:|--</span><br><span class="line">紫衫龙王|水性|大哥</span><br><span class="line">白眉鹰王|鹰爪功|二哥</span><br><span class="line">金毛狮王|狮吼功|三弟</span><br><span class="line">青翼蝠王|轻功|四弟</span><br></pre></td></tr></table></figure></p><p>效果：</p><table><thead><tr><th style="text-align:left">四大法王</th><th style="text-align:center">擅长</th><th>排行</th></tr></thead><tbody><tr><td style="text-align:left">紫衫龙王</td><td style="text-align:center">水性</td><td>大哥</td></tr><tr><td style="text-align:left">白眉鹰王</td><td style="text-align:center">鹰爪功</td><td>二哥</td></tr><tr><td style="text-align:left">金毛狮王</td><td style="text-align:center">狮吼功</td><td>三弟</td></tr><tr><td style="text-align:left">青翼蝠王</td><td style="text-align:center">轻功</td><td>四弟</td></tr></tbody></table><hr><p><strong>9.代码片段</strong></p><blockquote><p>单行代码片段使用一个反引号`包裹<br>多行代码使用三个反引号<code>`</code>包裹</p></blockquote><p>示例：</p><p>单行 ` print(“Hello world”)`<br>多行  ``` while True:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(input().strip(‘吗?？’)+’!’)<br>&nbsp;&nbsp;&nbsp;&nbsp;```</p><p>效果：</p><p><code>print(&quot;Hello world&quot;)</code></p><pre><code>while True:     print(input().strip(&apos;吗?？&apos;)+&apos;!&apos;)</code></pre><hr><p><strong>10.待办事项</strong></p><blockquote><p>当你想写一个类似Todo的待办可以用<br>- [ ] 不勾选<br>- [x] 勾选<br>注：括号里有x代表勾选，没有为空，中间有空格</p></blockquote><p>效果：</p><ul><li style="list-style: none"><input type="checkbox"> 不勾选</li><li style="list-style: none"><input type="checkbox" checked> 勾选</li></ul><hr><p><strong>其他</strong></p><blockquote><p>Markdown还可以画流程图，等等，其他功能等你去发现，现在就开始使用Markdown写一些文章练习一下吧</p></blockquote><hr><p><strong>推荐工具</strong></p><blockquote><p>除官方的Markdown工具外，博主强烈推荐VScode工具，很强大请自行体会，其对Markdown提供了很好的支持；另外您也可以使用在线的Markdown编辑文章,推荐 marxi.co</p></blockquote><blockquote><p>博主GitHub page地址：<a href="https://zhan123.xin" target="_blank" rel="noopener">zhan123.xin</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;h6 id=&quot;缘起：以前是自己写代码做博客系统，写博客都为了记录自己学到的东西，想发布出来还要购买服务器，近期想写一些博文免费发布出来，于是选择了用GitHub-page写博客，由于其特殊性，必须学会使用Markdown，于是就有了这篇博客&quot;&gt;&lt;a href=&quot;#缘起
+      
+    
+    </summary>
+    
+    
+      <category term="Makrdown" scheme="http://yoursite.com/tags/Makrdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好朋友</title>
     <link href="http://yoursite.com/2019/03/27/hello/"/>
     <id>http://yoursite.com/2019/03/27/hello/</id>
     <published>2019-03-27T09:05:09.000Z</published>
-    <updated>2019-03-27T09:07:23.839Z</updated>
+    <updated>2019-04-01T08:36:25.608Z</updated>
     
     <content type="html"><![CDATA[<p>有一天你来了！</p>]]></content>
     
@@ -37,30 +61,6 @@
     
     
       <category term="问候" scheme="http://yoursite.com/tags/%E9%97%AE%E5%80%99/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>神奇的魔法</title>
-    <link href="http://yoursite.com/2019/03/26/My-New-Post/"/>
-    <id>http://yoursite.com/2019/03/26/My-New-Post/</id>
-    <published>2019-03-25T16:06:06.000Z</published>
-    <updated>2019-03-27T09:06:06.132Z</updated>
-    
-    <content type="html"><![CDATA[<p>哈哈哈哈哈<br><a href="http://www.baidu.com" target="_blank" rel="noopener">http://www.baidu.com</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;哈哈哈哈哈&lt;br&gt;&lt;a href=&quot;http://www.baidu.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.baidu.com&lt;/a&gt;&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="234" scheme="http://yoursite.com/tags/234/"/>
     
   </entry>
   
