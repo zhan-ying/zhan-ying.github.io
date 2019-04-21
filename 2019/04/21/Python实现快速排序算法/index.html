@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。 快速排序  思想与步骤  快速排序是一种非常高效的排序算法，采用 “分而治之” 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后">
+<meta name="description" content="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。 快速排序  思想 快速排序是一种非常高效的排序算法，采用 “分而治之” 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后进行拆分">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python实现快速排序算法">
 <meta property="og:url" content="http://yoursite.com/2019/04/21/Python实现快速排序算法/index.html">
 <meta property="og:site_name" content="影">
-<meta property="og:description" content="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。 快速排序  思想与步骤  快速排序是一种非常高效的排序算法，采用 “分而治之” 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后">
+<meta property="og:description" content="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。 快速排序  思想 快速排序是一种非常高效的排序算法，采用 “分而治之” 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后进行拆分">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-21T15:11:46.661Z">
+<meta property="og:updated_time" content="2019-04-21T15:54:07.782Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python实现快速排序算法">
-<meta name="twitter:description" content="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。 快速排序  思想与步骤  快速排序是一种非常高效的排序算法，采用 “分而治之” 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后">
+<meta name="twitter:description" content="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。 快速排序  思想 快速排序是一种非常高效的排序算法，采用 “分而治之” 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后进行拆分">
 
 
 
@@ -360,13 +360,12 @@
       
 
       
-        <h6 id="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。"><a href="#排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。" class="headerlink" title="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。"></a>排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。</h6><blockquote>
-<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2></blockquote>
+        <h3 id="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。"><a href="#排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。" class="headerlink" title="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。"></a>排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。</h3><h2 id="快速排序"><a href="#快速排序" class="headerlink" title=" 快速排序"></a><center> 快速排序</center></h2><hr>
 <blockquote>
-<p><strong>思想与步骤</strong></p>
-</blockquote>
+<h3 id="思想"><a href="#思想" class="headerlink" title="思想"></a><strong>思想</strong></h3></blockquote>
 <p>快速排序是一种非常高效的排序算法，采用 <strong>“分而治之”</strong> 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后进行拆分进行快速排序，递归该过程，直到序列中所有记录均有序。</p>
-<hr>
+<blockquote>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a><strong>步骤</strong></h3></blockquote>
 <p>设当前待排序序列为R[low:high]，其中low ≤ high，如果待排序的序列规模足够小，则直接进行排序，否则分3步处理。</p>
 <blockquote>
 <p>1、分解</p>
@@ -389,8 +388,7 @@
 </ul>
 <hr>
 <blockquote>
-<p><strong>图解</strong></p>
-</blockquote>
+<h3 id="图解"><a href="#图解" class="headerlink" title="图解"></a><strong>图解</strong></h3></blockquote>
 <p>假设当前排序为R[low:high]，其中low ≤ high。</p>
 <p>1：首先取序列第一个元素为基准元素pivot=R[low]。i=low,j=high。<br>2：从后向前扫描，找小于等于pivot的数，如果找到，R[i]与R[j]交换，i++。<br>3：从前往后扫描，找大于pivot的数，如果找到，R[i]与R[j]交换，j–。<br>4:重复2~3，直到i=j,返回该位置mid=i,该位置正好为pivot元素。<br>完成一趟排序后，以mid为界，将序列分为两部分，左序列都比pivot小，有序列都比pivot大，然后再分别对这两个子序列进行快速排序。</p>
 <p>以序列（30，24，5，58，18，36，12，42，39）为例，进行演示</p>
@@ -461,7 +459,6 @@
 <thead>
 <tr>
 <th></th>
-<th></th>
 <th>i</th>
 <th></th>
 <th></th>
@@ -495,7 +492,6 @@
 <th></th>
 <th></th>
 <th></th>
-<th></th>
 <th>i</th>
 <th></th>
 <th></th>
@@ -525,7 +521,6 @@
 <th></th>
 <th></th>
 <th></th>
-<th></th>
 <th>i</th>
 <th></th>
 <th>j</th>
@@ -549,12 +544,11 @@
 </tbody>
 </table>
 <blockquote>
-<p>2、从后往前找小于等于pivot的数，找到R[j]=18</p>
+<p>4、从后往前找小于等于pivot的数，找到R[j]=18</p>
 </blockquote>
 <table>
 <thead>
 <tr>
-<th></th>
 <th></th>
 <th></th>
 <th></th>
@@ -588,7 +582,6 @@
 <th></th>
 <th></th>
 <th></th>
-<th></th>
 <th>i❤j</th>
 <th></th>
 <th></th>
@@ -616,7 +609,6 @@
 <table>
 <thead>
 <tr>
-<th></th>
 <th>low</th>
 <th></th>
 <th></th>
@@ -645,41 +637,27 @@
 <p>此时已mid为界，将原序列一分为二，左子序列为（12，24，5，18）元素都比pivot小，右子序列为（36，58，42，39）元素都比pivot大。然后在分别对两个子序列进行快速排序，最后即可得到排序后的结果。</p>
 <hr>
 <blockquote>
-<p><strong>复杂度分析</strong></p>
-</blockquote>
+<h3 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a><strong>复杂度分析</strong></h3></blockquote>
 <ul>
-<li>最好的时间复杂度为：<strong>O(nlogn)</strong><br>分解：划分函数需要扫描每个元素，每次扫描元素不超过n，时间复杂度为O(n)<br>解决子问题：在理想的情况下，每次划分将问题分解为两个规模为n/2的子问题，递归求解两个规模的子问题。所需时间为2T(n/2)<br>合并：因为是原地排序，合并不需要时间复杂度<br>因此总运行时间为</li>
+<li><strong>最好的时间复杂度为：O(nlogn)</strong><br>分解：划分函数需要扫描每个元素，每次扫描元素不超过n，时间复杂度为O(n)<br>解决子问题：在理想的情况下，每次划分将问题分解为两个规模为n/2的子问题，递归求解两个规模的子问题。所需时间为2T(n/2)<br>合并：因为是原地排序，合并不需要时间复杂度<br>因此总运行时间为</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">    T(n)=&#123; O(1) , n=1</span><br><span class="line">        2T(n/2)+O(n) , n&gt;1 &#125;</span><br><span class="line">```         </span><br><span class="line">最终求解为最好的时间复杂度为O(nlogn)</span><br><span class="line"></span><br><span class="line">- 最坏的时间复杂度为: **O(n²)**</span><br><span class="line">分解：划分函数需要扫描每个元素，每次扫描元素不超过n，时间复杂度为O(n)</span><br><span class="line">解决子问题：在最坏的情况下，每次划分将问题分解后，基准元素的一侧没有元素，其中一侧为规模为n-1的子问题，递归求解该子问题，所需时间为T(n-1)。</span><br><span class="line">合并：因为是原地排序，合并不需要时间复杂度</span><br><span class="line">因此总运行时间为</span><br></pre></td></tr></table></figure>
-<pre><code>T(n)={ O(1) , n=1
-    T(n-1)+O(n) , n&gt;1 }
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">最终求解为最好的时间复杂度为O(n²)</span><br><span class="line"></span><br><span class="line">- 平均时间复杂度为：**O(nlogn)**</span><br><span class="line">- 平均空间复杂度为：**O(logn)**</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&gt; **python实现**</span><br></pre></td></tr></table></figure>
-<pre><code>def quick_sort(lists,i,j):
-if i &gt;= j:
-    return list
-pivot = lists[i]
-low = i
-high = j
-while i &lt; j:
-    while i &lt; j and lists[j] &gt;= pivot:
-        j -= 1
-    lists[i]=lists[j]
-    while i &lt; j and lists[i] &lt;=pivot:
-        i += 1
-    lists[j]=lists[i]
-lists[j] = pivot
-quick_sort(lists,low,i-1)
-quick_sort(lists,i+1,high)
-return lists
-</code></pre><p>if <strong>name</strong>==”<strong>main</strong>“:<br>    lists=[30,24,5,58,18,36,12,42,39]<br>    print(“排序前的序列为：”)<br>    for i in lists:<br>        print(i,end =” “)<br>    print(“\n排序后的序列为：”)<br>    for i in quick_sort(lists,0,len(lists)-1):<br>        print(i,end=” “)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">T(n)=&#123; O(1) , n=1</span><br><span class="line">2T(n/2)+O(n) , n&gt;1 &#125;</span><br></pre></td></tr></table></figure>
+<p>最终求解为最好的时间复杂度为O(nlogn)</p>
+<ul>
+<li><strong>最坏的时间复杂度为: O(n²)</strong><br>分解：划分函数需要扫描每个元素，每次扫描元素不超过n，时间复杂度为O(n)<br>解决子问题：在最坏的情况下，每次划分将问题分解后，基准元素的一侧没有元素，其中一侧为规模为n-1的子问题，递归求解该子问题，所需时间为T(n-1)。<br>合并：因为是原地排序，合并不需要时间复杂度<br>因此总运行时间为</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">T(n)=&#123; O(1) , n=1</span><br><span class="line">    T(n-1)+O(n) , n&gt;1 &#125;</span><br></pre></td></tr></table></figure>
+<p>最终求解为最好的时间复杂度为O(n²)</p>
+<ul>
+<li><strong>平均时间复杂度为：O(nlogn)</strong></li>
+<li><strong>平均空间复杂度为：O(logn)</strong></li>
+</ul>
+<hr>
 <blockquote>
+<h3 id="python实现"><a href="#python实现" class="headerlink" title="python实现"></a><strong>python实现</strong></h3></blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">    def quick_sort(lists,i,j):</span><br><span class="line">    if i &gt;= j:</span><br><span class="line">        return list</span><br><span class="line">    pivot = lists[i]</span><br><span class="line">    low = i</span><br><span class="line">    high = j</span><br><span class="line">    while i &lt; j:</span><br><span class="line">        while i &lt; j and lists[j] &gt;= pivot:</span><br><span class="line">            j -= 1</span><br><span class="line">        lists[i]=lists[j]</span><br><span class="line">        while i &lt; j and lists[i] &lt;=pivot:</span><br><span class="line">            i += 1</span><br><span class="line">        lists[j]=lists[i]</span><br><span class="line">    lists[j] = pivot</span><br><span class="line">    quick_sort(lists,low,i-1)</span><br><span class="line">    quick_sort(lists,i+1,high)</span><br><span class="line">    return lists</span><br><span class="line"></span><br><span class="line">if __name__==&quot;__main__&quot;:</span><br><span class="line">    lists=[30,24,5,58,18,36,12,42,39]</span><br><span class="line">    print(&quot;排序前的序列为：&quot;)</span><br><span class="line">    for i in lists:</span><br><span class="line">        print(i,end =&quot; &quot;)</span><br><span class="line">    print(&quot;\n排序后的序列为：&quot;)</span><br><span class="line">    for i in quick_sort(lists,0,len(lists)-1):</span><br><span class="line">        print(i,end=&quot; &quot;)</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt;</span><br><span class="line">排序前的序列为：</span><br><span class="line">30 24 5 58 18 36 12 42 39</span><br><span class="line">排序后的序列为：</span><br><span class="line">5 12 18 24 30 36 39 42 58</span><br></pre></td></tr></table></figure>
+<hr>
 <blockquote>
-<blockquote>
-</blockquote>
-<p>排序前的序列为：<br>30 24 5 58 18 36 12 42 39<br>排序后的序列为：<br>5 12 18 24 30 36 39 42 58</p>
-</blockquote>
-</blockquote>
-<h2 id><a href="#" class="headerlink" title="`"></a><code>`</code></h2><blockquote>
 <p>博主GitHub page地址：<a href="https://zhan123.xin" target="_blank" rel="noopener">zhan123.xin</a><br>博主知乎地址：<a href="https://www.zhihu.com/people/xiao-zhan-66-58/activities" target="_blank" rel="noopener">知乎</a></p>
 </blockquote>
 
@@ -934,7 +912,7 @@ return lists
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。"><span class="nav-number">1.</span> <span class="nav-text">排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#快速排序"><span class="nav-number"></span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number"></span> <span class="nav-text">`</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。"><span class="nav-number">1.</span> <span class="nav-text">排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#快速排序"><span class="nav-number"></span> <span class="nav-text"> 快速排序</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#思想"><span class="nav-number">1.</span> <span class="nav-text">思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#步骤"><span class="nav-number">2.</span> <span class="nav-text">步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图解"><span class="nav-number">3.</span> <span class="nav-text">图解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复杂度分析"><span class="nav-number">4.</span> <span class="nav-text">复杂度分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#python实现"><span class="nav-number">5.</span> <span class="nav-text">python实现</span></a></li></ol></li></div>
             
 
           </div>
