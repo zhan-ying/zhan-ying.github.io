@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="影">
 <meta property="og:description" content="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。 快速排序  思想 快速排序是一种非常高效的排序算法，采用 “分而治之” 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后进行拆分">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-21T15:57:07.581Z">
+<meta property="og:updated_time" content="2019-04-21T16:02:10.227Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python实现快速排序算法">
 <meta name="twitter:description" content="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。 快速排序  思想 快速排序是一种非常高效的排序算法，采用 “分而治之” 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后进行拆分">
@@ -641,7 +641,7 @@
 <ul>
 <li><strong>最好的时间复杂度为：O(nlogn)</strong><br>分解：划分函数需要扫描每个元素，每次扫描元素不超过n，时间复杂度为O(n)<br>解决子问题：在理想的情况下，每次划分将问题分解为两个规模为n/2的子问题，递归求解两个规模的子问题。所需时间为2T(n/2)<br>合并：因为是原地排序，合并不需要时间复杂度<br>因此总运行时间为</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">T(n)=&#123; O(1) , n=1</span><br><span class="line">2T(n/2)+O(n) , n&gt;1 &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">T(n)=&#123; O(1) , n=1</span><br><span class="line">2T(n/2)+O(n) , n&gt;1 &#125;</span><br></pre></td></tr></table></figure>
 <p>最终求解为最好的时间复杂度为O(nlogn)</p>
 <ul>
 <li><strong>最坏的时间复杂度为: O(n²)</strong><br>分解：划分函数需要扫描每个元素，每次扫描元素不超过n，时间复杂度为O(n)<br>解决子问题：在最坏的情况下，每次划分将问题分解后，基准元素的一侧没有元素，其中一侧为规模为n-1的子问题，递归求解该子问题，所需时间为T(n-1)。<br>合并：因为是原地排序，合并不需要时间复杂度<br>因此总运行时间为</li>
@@ -955,7 +955,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/zhan-ying>感谢您的到来</a></div>
 
 
 
@@ -973,10 +973,10 @@
     </footer>
 
     
-      <div class="back-to-top">
+      <div class=" back-to-top">
         <i class="fa fa-arrow-up"></i>
         
-      </div>
+      </a></div>
     
 
     
@@ -1145,5 +1145,5 @@
 
 <script src="/live2d-widget/autolload.js"></script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</footer></div><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
