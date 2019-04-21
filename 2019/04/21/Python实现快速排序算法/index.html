@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Python,">
+  <meta name="keywords" content="算法,">
 
 
 
@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="缘起：几天没更新了，总结一些Python小技巧,希望在Python路上的你能越走越远  1、条件判断 123456flag=Trueif flag:    x=1else:    x=2print(x) 简化形式： 123flag=Truex=1 if flag else 2print(x)  2、累加求和 1234sum=0for i in range(0,101):    sum +=ipri">
-<meta name="keywords" content="Python">
+<meta name="description" content="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。 快速排序  思想与步骤  快速排序是一种非常高效的排序算法，采用 “分而治之” 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后">
+<meta name="keywords" content="算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="10个Python小技巧">
-<meta property="og:url" content="http://yoursite.com/2019/04/13/10个Python小技巧/index.html">
+<meta property="og:title" content="Python实现快速排序算法">
+<meta property="og:url" content="http://yoursite.com/2019/04/21/Python实现快速排序算法/index.html">
 <meta property="og:site_name" content="影">
-<meta property="og:description" content="缘起：几天没更新了，总结一些Python小技巧,希望在Python路上的你能越走越远  1、条件判断 123456flag=Trueif flag:    x=1else:    x=2print(x) 简化形式： 123flag=Truex=1 if flag else 2print(x)  2、累加求和 1234sum=0for i in range(0,101):    sum +=ipri">
+<meta property="og:description" content="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。 快速排序  思想与步骤  快速排序是一种非常高效的排序算法，采用 “分而治之” 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-13T16:05:07.485Z">
+<meta property="og:updated_time" content="2019-04-21T15:11:46.661Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="10个Python小技巧">
-<meta name="twitter:description" content="缘起：几天没更新了，总结一些Python小技巧,希望在Python路上的你能越走越远  1、条件判断 123456flag=Trueif flag:    x=1else:    x=2print(x) 简化形式： 123flag=Truex=1 if flag else 2print(x)  2、累加求和 1234sum=0for i in range(0,101):    sum +=ipri">
+<meta name="twitter:title" content="Python实现快速排序算法">
+<meta name="twitter:description" content="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。 快速排序  思想与步骤  快速排序是一种非常高效的排序算法，采用 “分而治之” 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后">
 
 
 
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/13/10个Python小技巧/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/21/Python实现快速排序算法/">
 
 
 
 
 
-  <title>10个Python小技巧 | 影</title>
+  <title>Python实现快速排序算法 | 影</title>
   
 
 
@@ -292,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/13/10个Python小技巧/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/21/Python实现快速排序算法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="影">
@@ -309,7 +309,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">10个Python小技巧</h1>
+          <h1 class="post-title" itemprop="name headline">Python实现快速排序算法</h1>
         
 
         <div class="post-meta">
@@ -321,8 +321,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-13T21:41:22+08:00">
-                2019-04-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-21T20:19:38+08:00">
+                2019-04-21
               </time>
             
 
@@ -360,55 +360,326 @@
       
 
       
-        <h6 id="缘起：几天没更新了，总结一些Python小技巧-希望在Python路上的你能越走越远"><a href="#缘起：几天没更新了，总结一些Python小技巧-希望在Python路上的你能越走越远" class="headerlink" title="缘起：几天没更新了，总结一些Python小技巧,希望在Python路上的你能越走越远"></a>缘起：几天没更新了，总结一些Python小技巧,希望在Python路上的你能越走越远</h6><hr>
+        <h6 id="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。"><a href="#排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。" class="headerlink" title="排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。"></a>排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。</h6><blockquote>
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2></blockquote>
 <blockquote>
-<h5 id="1、条件判断"><a href="#1、条件判断" class="headerlink" title="1、条件判断"></a>1、条件判断</h5></blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">flag=True</span><br><span class="line">if flag:</span><br><span class="line">    x=1</span><br><span class="line">else:</span><br><span class="line">    x=2</span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
-<p>简化形式：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">flag=True</span><br><span class="line">x=1 if flag else 2</span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
+<p><strong>思想与步骤</strong></p>
+</blockquote>
+<p>快速排序是一种非常高效的排序算法，采用 <strong>“分而治之”</strong> 的思想，把大的拆分为小的，小的拆分为更小的。其原理是，对于给定的记录，选择一个基准数，通过一趟排序后，将原序列分为两部分，使得前面的比后面的小，然后再依次对前后进行拆分进行快速排序，递归该过程，直到序列中所有记录均有序。</p>
+<hr>
+<p>设当前待排序序列为R[low:high]，其中low ≤ high，如果待排序的序列规模足够小，则直接进行排序，否则分3步处理。</p>
 <blockquote>
-<h5 id="2、累加求和"><a href="#2、累加求和" class="headerlink" title="2、累加求和"></a>2、累加求和</h5></blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sum=0</span><br><span class="line">for i in range(0,101):</span><br><span class="line">    sum +=i</span><br><span class="line">print(sum)</span><br></pre></td></tr></table></figure>
-<p>利用求和函数sum():<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(sum(range(0,101)))</span><br></pre></td></tr></table></figure></p>
+<p>1、分解</p>
+</blockquote>
+<p>在R[low:high]中选定一个元素R[pivot]，以此为标准将要排序的序列划分为两个序列R[low:pivot-1]与R[pivot+1：high]，并使序列R[low:pivot-1]中所有元素的值小于等于R[pivot]，序列R[pivot+1：high]所有的值大于R[pivot]，此时基准元素以位于正确位置，它无需参加后续排序。</p>
 <blockquote>
-<h5 id="3、文件关闭"><a href="#3、文件关闭" class="headerlink" title="3、文件关闭"></a>3、文件关闭</h5></blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">f = open(&apos;file.txt&apos;,&apos;r&apos;)</span><br><span class="line">f_control = f.read()</span><br><span class="line">f.close()</span><br><span class="line">words = f_control.split(&apos; &apos;)</span><br><span class="line">word_count=len(words)</span><br><span class="line">print (word_count)</span><br></pre></td></tr></table></figure>
-<p>配合with使用更简便：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">with open(&apos;file.txt&apos;,&apos;r&apos;) as f:</span><br><span class="line">    f_control=f.read()</span><br><span class="line">words = f_control.split(&apos; &apos;)</span><br><span class="line">word_count=len(words)</span><br><span class="line">print (word_count)</span><br></pre></td></tr></table></figure>
+<p>2、递归</p>
+</blockquote>
+<p>对于子序列R[low:pivot-1]与R[pivot+1：high]，分别调用快速排序算法来进行排序。</p>
 <blockquote>
-<h5 id="4、输出下标与键"><a href="#4、输出下标与键" class="headerlink" title="4、输出下标与键"></a>4、输出下标与键</h5></blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">seq = [&apos;Zero&apos;,&apos;One&apos;,&apos;Two&apos;,&apos;Three&apos;]</span><br><span class="line">i=0</span><br><span class="line">for element in seq:</span><br><span class="line">    print (i,seq[i])</span><br><span class="line">    i+=1</span><br></pre></td></tr></table></figure>
-<p>使用enumerate函数来遍历:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">seq = [&apos;Zero&apos;,&apos;One&apos;,&apos;Two&apos;,&apos;Three&apos;]</span><br><span class="line">for i, element in enumerate(seq):</span><br><span class="line">    print (i, element)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h5 id="5、遍历多个序列"><a href="#5、遍历多个序列" class="headerlink" title="5、遍历多个序列"></a>5、遍历多个序列</h5></blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">names=[&apos;Corey&apos;,&apos;Chris&apos;,&apos;Dave&apos;,&apos;Apple&apos;]</span><br><span class="line">ages=[20,23,18,24]</span><br><span class="line">for i,name in enumerate(names):</span><br><span class="line">    age=ages[i]</span><br><span class="line">    print(&apos;&#123;&#125; is &#123;&#125; old&apos;.format(name,age))</span><br></pre></td></tr></table></figure>
-<p>用zip函数来简化：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">names=[&apos;Corey&apos;,&apos;Chris&apos;,&apos;Dave&apos;,&apos;Apple&apos;]</span><br><span class="line">ages=[20,23,18,24]</span><br><span class="line">for name ,age in zip(names,ages):</span><br><span class="line">    print(&apos;&#123;&#125; is &#123;&#125; old&apos;.format(name,age))</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h5 id="6、序列取首尾"><a href="#6、序列取首尾" class="headerlink" title="6、序列取首尾"></a>6、序列取首尾</h5></blockquote>
-<p>传统方式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">numbers=(0,1,2,3,4,5,6,7,8,9)</span><br><span class="line">head=numbers[0]</span><br><span class="line">tail=numbers[-1]</span><br><span class="line">print (head)</span><br><span class="line">print (tail)</span><br></pre></td></tr></table></figure></p>
-<p>利用下划线_:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">numbers=(0,1,2,3,4,5,6,7,8,9)</span><br><span class="line">head,*_,tail=numbers</span><br><span class="line">print (head)</span><br><span class="line">print (tail)</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<h5 id="7、输入加密的密码"><a href="#7、输入加密的密码" class="headerlink" title="7、输入加密的密码"></a>7、输入加密的密码</h5></blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">username = input(&apos;Username: &apos;)</span><br><span class="line">password = input(&apos;Password:&apos;)</span><br><span class="line">print (&apos;Logging In...&apos;)</span><br><span class="line">&gt;&gt;&gt;</span><br><span class="line">Username: leijun</span><br><span class="line">Password:python</span><br><span class="line">Logging In...</span><br></pre></td></tr></table></figure>
-<p>密码通常隐藏输入：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">from getpass import getpass</span><br><span class="line">username=input(&apos;Username: &apos;)</span><br><span class="line">password=getpass(&apos;Password:&apos;)</span><br><span class="line">print (&apos;Logging In...&apos;)</span><br><span class="line"></span><br><span class="line">&gt;&gt;</span><br><span class="line">Username: leijun</span><br><span class="line">Password:</span><br><span class="line">Logging In...</span><br><span class="line">注：Python自带IDLE似乎不支持隐藏回显，在cmd有效</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h5 id="8、列表找奇数"><a href="#8、列表找奇数" class="headerlink" title="8、列表找奇数"></a>8、列表找奇数</h5></blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a=[1,2,3,4,5,6,7,8,9,10]</span><br><span class="line">res=[i for i in a if i%2==1]</span><br><span class="line">print(res)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<h5 id="9、列表合并-在已存在的列表中添加新的列表内容"><a href="#9、列表合并-在已存在的列表中添加新的列表内容" class="headerlink" title="9、列表合并,在已存在的列表中添加新的列表内容"></a>9、列表合并,在已存在的列表中添加新的列表内容</h5></blockquote>
-<p>传统做法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">list1=[1,3,5,7,9]</span><br><span class="line">list2=[2,4,6,8,10]</span><br><span class="line">list1=list1+list2</span><br><span class="line">print(list1)</span><br></pre></td></tr></table></figure>
-<p>使用extend函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">list1=[1,3,5,7,9]</span><br><span class="line">list2=[2,4,6,8,10]</span><br><span class="line">list1.extend(list2)</span><br><span class="line">list1.sort(reverse=False)</span><br><span class="line">print(list1)</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<h5 id="10、有趣的python"><a href="#10、有趣的python" class="headerlink" title="10、有趣的python"></a>10、有趣的python</h5></blockquote>
-<p>画爱心</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&apos;\n&apos;.join([&apos;&apos;.join([(&apos;ILoveYou&apos;[(x-y)%8]if((x*0.05)**2+(y*0.1)**2-1)**3-(x*0.05)**2*(y*0.1)**3&lt;=0 else&apos; &apos;)for x in range(-30,30)])for y in range(15,-15,-1)]))</span><br></pre></td></tr></table></figure>
-<p>离人工智能最近的一次<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">while True:</span><br><span class="line">    s = input(&quot;me:&quot;).strip(&apos;?？&apos;).replace(&quot;吗&quot;,&quot;&quot;).replace(&quot;你&quot;,&quot;&quot;).replace(&quot;我&quot;,&quot;&quot;)</span><br><span class="line">    print(&quot;AI:&quot;+s)</span><br><span class="line">&gt;&gt;&gt;</span><br><span class="line">me:你好</span><br><span class="line">AI:好</span><br><span class="line">me:你爱我吗？</span><br><span class="line">AI:爱</span><br><span class="line">me:有趣</span><br><span class="line">AI:有趣</span><br></pre></td></tr></table></figure></p>
+<p>3、合并</p>
+</blockquote>
+<p>由于对序列R[low:pivot-1]与R[pivot+1：high]的排序是原地进行的，所以R[low:pivot-1]与R[pivot+1：high]都已经排好序后，不需要进行任何计算，就已经排好序。</p>
+<p>注：基准元素，一般来说选取有几种方法</p>
+<ul>
+<li>取第一个元素</li>
+<li>取最后一个元素</li>
+<li>取第中间位置元素</li>
+<li>取第一个、最后一个、中间位置3者的中位数元素</li>
+</ul>
 <hr>
 <blockquote>
+<p><strong>图解</strong></p>
+</blockquote>
+<p>假设当前排序为R[low:high]，其中low ≤ high。</p>
+<p>1：首先取序列第一个元素为基准元素pivot=R[low]。i=low,j=high。<br>2：从后向前扫描，找小于等于pivot的数，如果找到，R[i]与R[j]交换，i++。<br>3：从前往后扫描，找大于pivot的数，如果找到，R[i]与R[j]交换，j–。<br>4:重复2~3，直到i=j,返回该位置mid=i,该位置正好为pivot元素。<br>完成一趟排序后，以mid为界，将序列分为两部分，左序列都比pivot小，有序列都比pivot大，然后再分别对这两个子序列进行快速排序。</p>
+<p>以序列（30，24，5，58，18，36，12，42，39）为例，进行演示</p>
+<blockquote>
+<p>1、初始化，i=low,j=high,pivot=R[low]=30</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>i</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>j</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30</td>
+<td>24</td>
+<td>5</td>
+<td>58</td>
+<td>18</td>
+<td>36</td>
+<td>12</td>
+<td>42</td>
+<td>39</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>2、从后往前找小于等于pivot的数，找到R[j]=12</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>i</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>j</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30</td>
+<td>24</td>
+<td>5</td>
+<td>58</td>
+<td>18</td>
+<td>36</td>
+<td>12</td>
+<td>42</td>
+<td>39</td>
+</tr>
+</tbody>
+</table>
+<p>R[i]与R[j]交换，i++</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>i</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>j</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12</td>
+<td>24</td>
+<td>5</td>
+<td>58</td>
+<td>18</td>
+<td>36</td>
+<td>30</td>
+<td>42</td>
+<td>39</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>3、从前往后找大于pivot的数，找到R[i]=58</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>i</th>
+<th></th>
+<th></th>
+<th>j</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12</td>
+<td>24</td>
+<td>5</td>
+<td>58</td>
+<td>18</td>
+<td>36</td>
+<td>30</td>
+<td>42</td>
+<td>39</td>
+</tr>
+</tbody>
+</table>
+<p>R[i]与R[j]交换，j–</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>i</th>
+<th></th>
+<th>j</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12</td>
+<td>24</td>
+<td>5</td>
+<td>30</td>
+<td>18</td>
+<td>36</td>
+<td>58</td>
+<td>42</td>
+<td>39</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>2、从后往前找小于等于pivot的数，找到R[j]=18</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>i</th>
+<th>j</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12</td>
+<td>24</td>
+<td>5</td>
+<td>30</td>
+<td>18</td>
+<td>36</td>
+<td>58</td>
+<td>42</td>
+<td>39</td>
+</tr>
+</tbody>
+</table>
+<p>R[i]与R[j]交换，i++</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>i❤j</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12</td>
+<td>24</td>
+<td>5</td>
+<td>18</td>
+<td>30</td>
+<td>36</td>
+<td>58</td>
+<td>42</td>
+<td>39</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>5、从前往后找大于pivot的数，这时i=j,第一轮排序结束，返回i的位置，mid=i</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>low</th>
+<th></th>
+<th></th>
+<th>mid-1</th>
+<th>mid</th>
+<th>mid+1</th>
+<th></th>
+<th></th>
+<th>high</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>12</td>
+<td>24</td>
+<td>5</td>
+<td>18</td>
+<td>30</td>
+<td>36</td>
+<td>58</td>
+<td>42</td>
+<td>39</td>
+</tr>
+</tbody>
+</table>
+<p>此时已mid为界，将原序列一分为二，左子序列为（12，24，5，18）元素都比pivot小，右子序列为（36，58，42，39）元素都比pivot大。然后在分别对两个子序列进行快速排序，最后即可得到排序后的结果。</p>
+<hr>
+<blockquote>
+<p><strong>复杂度分析</strong></p>
+</blockquote>
+<ul>
+<li>最好的时间复杂度为：<strong>O(nlogn)</strong><br>分解：划分函数需要扫描每个元素，每次扫描元素不超过n，时间复杂度为O(n)<br>解决子问题：在理想的情况下，每次划分将问题分解为两个规模为n/2的子问题，递归求解两个规模的子问题。所需时间为2T(n/2)<br>合并：因为是原地排序，合并不需要时间复杂度<br>因此总运行时间为</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">    T(n)=&#123; O(1) , n=1</span><br><span class="line">        2T(n/2)+O(n) , n&gt;1 &#125;</span><br><span class="line">```         </span><br><span class="line">最终求解为最好的时间复杂度为O(nlogn)</span><br><span class="line"></span><br><span class="line">- 最坏的时间复杂度为: **O(n²)**</span><br><span class="line">分解：划分函数需要扫描每个元素，每次扫描元素不超过n，时间复杂度为O(n)</span><br><span class="line">解决子问题：在最坏的情况下，每次划分将问题分解后，基准元素的一侧没有元素，其中一侧为规模为n-1的子问题，递归求解该子问题，所需时间为T(n-1)。</span><br><span class="line">合并：因为是原地排序，合并不需要时间复杂度</span><br><span class="line">因此总运行时间为</span><br></pre></td></tr></table></figure>
+<pre><code>T(n)={ O(1) , n=1
+    T(n-1)+O(n) , n&gt;1 }
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">最终求解为最好的时间复杂度为O(n²)</span><br><span class="line"></span><br><span class="line">- 平均时间复杂度为：**O(nlogn)**</span><br><span class="line">- 平均空间复杂度为：**O(logn)**</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&gt; **python实现**</span><br></pre></td></tr></table></figure>
+<pre><code>def quick_sort(lists,i,j):
+if i &gt;= j:
+    return list
+pivot = lists[i]
+low = i
+high = j
+while i &lt; j:
+    while i &lt; j and lists[j] &gt;= pivot:
+        j -= 1
+    lists[i]=lists[j]
+    while i &lt; j and lists[i] &lt;=pivot:
+        i += 1
+    lists[j]=lists[i]
+lists[j] = pivot
+quick_sort(lists,low,i-1)
+quick_sort(lists,i+1,high)
+return lists
+</code></pre><p>if <strong>name</strong>==”<strong>main</strong>“:<br>    lists=[30,24,5,58,18,36,12,42,39]<br>    print(“排序前的序列为：”)<br>    for i in lists:<br>        print(i,end =” “)<br>    print(“\n排序后的序列为：”)<br>    for i in quick_sort(lists,0,len(lists)-1):<br>        print(i,end=” “)</p>
+<blockquote>
+<blockquote>
+<blockquote>
+</blockquote>
+<p>排序前的序列为：<br>30 24 5 58 18 36 12 42 39<br>排序后的序列为：<br>5 12 18 24 30 36 39 42 58</p>
+</blockquote>
+</blockquote>
+<h2 id><a href="#" class="headerlink" title="`"></a><code>`</code></h2><blockquote>
 <p>博主GitHub page地址：<a href="https://zhan123.xin" target="_blank" rel="noopener">zhan123.xin</a><br>博主知乎地址：<a href="https://www.zhihu.com/people/xiao-zhan-66-58/activities" target="_blank" rel="noopener">知乎</a></p>
 </blockquote>
 
@@ -464,7 +735,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+            <a href="/tags/算法/" rel="tag"><i class="fa fa-tag"></i> 算法</a>
           
         </div>
       
@@ -477,8 +748,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/06/Git简明教程/" rel="next" title="Git简明教程">
-                <i class="fa fa-chevron-left"></i> Git简明教程
+              <a href="/2019/04/13/10个Python小技巧/" rel="next" title="10个Python小技巧">
+                <i class="fa fa-chevron-left"></i> 10个Python小技巧
               </a>
             
           </div>
@@ -486,10 +757,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/21/Python实现快速排序算法/" rel="prev" title="Python实现快速排序算法">
-                Python实现快速排序算法 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -667,7 +934,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#缘起：几天没更新了，总结一些Python小技巧-希望在Python路上的你能越走越远"><span class="nav-number">1.</span> <span class="nav-text">缘起：几天没更新了，总结一些Python小技巧,希望在Python路上的你能越走越远</span></a></li></ol><li class="nav-item nav-level-5"><a class="nav-link" href="#1、条件判断"><span class="nav-number"></span> <span class="nav-text">1、条件判断</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、累加求和"><span class="nav-number"></span> <span class="nav-text">2、累加求和</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、文件关闭"><span class="nav-number"></span> <span class="nav-text">3、文件关闭</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、输出下标与键"><span class="nav-number"></span> <span class="nav-text">4、输出下标与键</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5、遍历多个序列"><span class="nav-number"></span> <span class="nav-text">5、遍历多个序列</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6、序列取首尾"><span class="nav-number"></span> <span class="nav-text">6、序列取首尾</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7、输入加密的密码"><span class="nav-number"></span> <span class="nav-text">7、输入加密的密码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8、列表找奇数"><span class="nav-number"></span> <span class="nav-text">8、列表找奇数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9、列表合并-在已存在的列表中添加新的列表内容"><span class="nav-number"></span> <span class="nav-text">9、列表合并,在已存在的列表中添加新的列表内容</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#10、有趣的python"><span class="nav-number"></span> <span class="nav-text">10、有趣的python</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。"><span class="nav-number">1.</span> <span class="nav-text">排序是算法的入门知识，应用广泛，且在程序员面试中，经常被提及，其中最常考的两大排序算法为快速排序与归并排序，本篇将使用Python语言来分析了解快速排序算法。</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#快速排序"><span class="nav-number"></span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number"></span> <span class="nav-text">`</span></a></li></div>
             
 
           </div>
